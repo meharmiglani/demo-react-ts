@@ -1,38 +1,81 @@
-.App {
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btnContainer {
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.myButton {
+  display: inline;
+  margin: 10px;
+  margin-left: 100px;
+  padding: 15px;
+}
+
+label,
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 125px;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus,
+textarea:focus {
+  outline: none;
+  background: #fff5f9;
+}
+
+button {
+  font: inherit;
+  background: #ffdac1;
+  border: 2px solid #ff9900;
+  cursor: pointer;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background: #ffb7b2;
+  border-color: #a80041;
+}
+
+.student-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e2f0cb;
+  margin: 20px auto;
+  width: 70%;
+  height: 60px;
+  border-radius: 50px;
 }
