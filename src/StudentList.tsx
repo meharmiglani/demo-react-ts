@@ -17,7 +17,7 @@ class StudentList extends Component<StudentPropType> {
         ) : (
           <React.Fragment>
             <div style={{ height: "10px", width: "250px", margin: "0px auto" }}>
-              Teachers' List
+              Students' List
             </div>
             {this.props.students.map((student) => {
               return <PersonItem val={student} />;
